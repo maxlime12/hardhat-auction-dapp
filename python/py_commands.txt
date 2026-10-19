@@ -1,0 +1,10 @@
+# Створення віртуального середовища
+python -m venv .venv
+# Активація середовища (Windows)
+.venv\Scripts\activate
+# Встановлення бібліотеки Web3 для роботи з контрактами
+pip install web3
+# Збереження залежностей
+pip freeze > requirements.txt
+# Запуск графічного інтерфейсу
+python main.py

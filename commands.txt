@@ -1,0 +1,14 @@
+# 1. Ініціалізація нового проєкту Node.js
+npm init -y
+# 2. Встановлення Hardhat як залежності для розробки
+npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+# 3. Створення та початкове налаштування проєкту Hardhat
+npx hardhat
+# 4. Компіляція смартконтрактів
+npx hardhat compile
+# 5. Запуск локального блокчейну Hardhat Node
+npx hardhat node
+# 6. Деплою контрактів в блокчейн за допомогою інструменту Ignition
+npx hardhat ignition deploy ./ignition/modules/Deploy.js --network localhost
+# 7. Запуск тестів смартконтрактів
+npx hardhat test
